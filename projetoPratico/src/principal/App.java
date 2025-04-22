@@ -5,8 +5,10 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
         Carro carro[] = new Carro[2];
+        int fimDaCorrida = 30;
 
         for (int i = 0; i < 2; i++) {
+            System.out.printf("Digite o modelo do carro %d : ",i+1);
             carro[i] = new Carro(sc.nextLine());
         }
 
@@ -30,7 +32,7 @@ public class App {
 
             System.out.println("==============================");
 
-            if (carro[0].getDistancia() >= 30 || carro[1].getDistancia() >= 30) {
+            if (carro[0].getDistancia() >= fimDaCorrida || carro[1].getDistancia() >= fimDaCorrida) {
                 corridaFinalizada = true;
                 if (carro[0].getDistancia() > carro[1].getDistancia()) {
                     System.out.println("Corrida finalizada, " + carro[0].getModelo() + " venceu!");
