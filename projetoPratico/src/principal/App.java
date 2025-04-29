@@ -3,7 +3,7 @@ import carros.Carro;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Carro carro[] = new Carro[2];
         boolean corridaFinalizada = false;
