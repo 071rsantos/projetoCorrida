@@ -30,6 +30,8 @@ public class Carro {
 
     @Override
     public String toString() {
-        return String.format("%" + distanciaPercorrida + "s ", "#");
+        return " ".repeat(Math.max(0,distanciaPercorrida-1))+ "#";
+        
+        /**String.format("%" + distanciaPercorrida + "s", "#");*/
     }
 }
