@@ -21,7 +21,7 @@ public class Carro {
     }
 
     public int sortearVelocidade() {
-        return random.nextInt(3) + 1; // Sorteia 1, 2 ou 3
+        return random.nextInt(3) + 1;
     }
 
     public void mover() {
